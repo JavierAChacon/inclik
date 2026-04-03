@@ -208,12 +208,12 @@ export default function Page() {
           </div>
 
           <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-12 lg:gap-0">
-            <div className="order-2 lg:order-1 lg:col-span-6 lg:pr-0">
+            <div className="order-1 lg:col-span-6 lg:pr-0">
               <div className="relative mx-auto max-w-md lg:max-w-[34rem]">
                 <div className="absolute inset-0 translate-x-4 translate-y-4 rotate-[-4deg] rounded-[2rem] bg-primary-fixed/70" />
                 <div className="relative overflow-hidden rounded-[2rem] bg-surface-container-lowest shadow-[0_12px_40px_rgba(25,28,27,0.06)]">
                   <img
-                    src={productImage}
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzf7RsgiWizTomXisOgQfPHLt6YMZpgs7x7BG7ntqSc7byWzui3KHYPvxsch9jF9jp4LklAiJ3M6EuBGQz-78syVRkSX2zR9bHMN-sUlo3bVUdz7C6eV-hswjIm1AJBCwxVYqb35aQFBk8aGTGKTiSetw19USgj50nX5PjPo1dN4TjG3_D763btCbZ_m9mts5A25ZCYeog7rUg2kBCwustrivWNDb11beydxqxvs5S22LUr8_jDe9AmZbjlJUkkv6aNP4A6sdBXMDh"
                     alt="Ramo floral elegante"
                     className="h-[360px] w-full object-cover sm:h-[480px] lg:h-[680px]"
                   />
@@ -221,71 +221,60 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="order-1 lg:order-2 lg:col-span-6 lg:-ml-14 xl:-ml-20">
-              <div className="rounded-[2rem] bg-white/88 p-0 backdrop-blur-sm lg:p-8">
-                <div className="space-y-6">
-                  <Badge className="rounded-full bg-secondary-container px-4 py-1.5 text-on-secondary-container hover:bg-secondary-container">
-                    Floristería editorial
-                  </Badge>
+            <div className="order-2 lg:col-span-6 lg:-ml-14 xl:-ml-20">
+              <div className="flex lg:min-h-[680px] lg:items-center">
+                <div className="w-full rounded-[2rem] bg-white/88 p-0 backdrop-blur-sm lg:p-8">
+                  <div className="space-y-6">
+                    <div className="space-y-5">
+                      <h1 className="font-headline text-4xl leading-[0.95] font-bold tracking-[-0.04em] text-primary sm:text-5xl lg:text-7xl">
+                        Flores con alma,
+                        <br />
+                        belleza con intención.
+                      </h1>
 
-                  <div className="space-y-4">
-                    <h1 className="font-headline text-4xl leading-[0.95] font-bold tracking-[-0.04em] text-primary sm:text-5xl lg:text-7xl">
-                      Flores con alma,
-                      <br />
-                      belleza con intención.
-                    </h1>
-
-                    <p className="max-w-xl text-base leading-7 text-on-surface-variant sm:text-lg">
-                      Diseñamos ramos, centros y composiciones florales con un
-                      enfoque elegante, orgánico y contemporáneo. Cada arreglo
-                      está pensado para emocionar, decorar y convertir un gesto
-                      en una experiencia memorable.
-                    </p>
-                  </div>
-
-                  <div className="flex flex-col gap-3 sm:flex-row">
-                    <Button className="rounded-full bg-linear-to-br from-primary to-primary-container px-7 py-6 text-on-primary shadow-[0_12px_40px_rgba(25,28,27,0.06)] hover:opacity-95">
-                      Ver catálogo
-                    </Button>
-
-                    <Button
-                      variant="secondary"
-                      className="rounded-full bg-secondary-container px-7 py-6 text-on-secondary-container hover:opacity-95"
-                    >
-                      Pedir ramo personalizado
-                    </Button>
-                  </div>
-
-                  <div className="grid max-w-xl grid-cols-1 gap-4 pt-4 sm:grid-cols-3">
-                    <div className="rounded-3xl bg-surface-container-low p-4">
-                      <p className="text-2xl font-bold text-primary">+120</p>
-                      <p className="text-sm text-on-surface-variant">
-                        composiciones florales
+                      <p className="max-w-xl text-base leading-7 text-on-surface-variant sm:text-lg">
+                        Diseñamos ramos, centros y composiciones florales con un
+                        enfoque elegante, orgánico y contemporáneo. Cada arreglo
+                        está pensado para emocionar, decorar y convertir un
+                        gesto en una experiencia memorable.
                       </p>
                     </div>
-                    <div className="rounded-3xl bg-primary-fixed/65 p-4">
-                      <p className="text-2xl font-bold text-primary">24h</p>
-                      <p className="text-sm text-on-surface-variant">
-                        entregas locales
-                      </p>
-                    </div>
-                    <div className="rounded-3xl bg-secondary-container/70 p-4">
-                      <p className="text-2xl font-bold text-secondary">100%</p>
-                      <p className="text-sm text-on-surface-variant">
-                        flor fresca seleccionada
-                      </p>
-                    </div>
-                  </div>
 
-                  <div className="flex flex-wrap gap-3 pt-2">
-                    {categories.map((category) => (
-                      <Badge
-                        key={category}
-                        className="rounded-full bg-surface-container-lowest px-4 py-2 text-primary shadow-[0_6px_18px_rgba(25,28,27,0.04)] hover:bg-surface-container-lowest"
+                    <div className="flex flex-col gap-3 sm:flex-row">
+                      <Button className="rounded-full bg-linear-to-br from-primary to-primary-container px-7 py-6 text-on-primary shadow-[0_12px_40px_rgba(25,28,27,0.06)] hover:opacity-95">
+                        Ver catálogo
+                      </Button>
+
+                      <Button
+                        variant="secondary"
+                        className="rounded-full bg-secondary-container px-7 py-6 text-on-secondary-container hover:opacity-95"
                       >
-                        {category}
-                      </Badge>
-                    ))}
+                        Pedir ramo personalizado
+                      </Button>
+                    </div>
+
+                    <div className="grid max-w-xl grid-cols-1 gap-4 pt-4 sm:grid-cols-3">
+                      <div className="rounded-3xl bg-surface-container-low p-4">
+                        <p className="text-2xl font-bold text-primary">+120</p>
+                        <p className="text-sm text-on-surface-variant">
+                          composiciones florales
+                        </p>
+                      </div>
+                      <div className="rounded-3xl bg-primary-fixed/65 p-4">
+                        <p className="text-2xl font-bold text-primary">24h</p>
+                        <p className="text-sm text-on-surface-variant">
+                          entregas locales
+                        </p>
+                      </div>
+                      <div className="rounded-3xl bg-secondary-container/70 p-4">
+                        <p className="text-2xl font-bold text-secondary">
+                          100%
+                        </p>
+                        <p className="text-sm text-on-surface-variant">
+                          flor fresca seleccionada
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
