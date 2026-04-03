@@ -240,33 +240,35 @@ export default function Page() {
                       </p>
                     </div>
 
-                    <div className="flex flex-col gap-3 sm:flex-row">
-                      <Button className="rounded-full bg-linear-to-br from-primary to-primary-container px-7 py-6 text-on-primary shadow-[0_12px_40px_rgba(25,28,27,0.06)] hover:opacity-95">
-                        Ver catálogo
+                    <div className="flex gap-3 max-sm:flex-row max-sm:flex-nowrap sm:flex-row">
+                      <Button className="min-w-0 flex-1 rounded-full bg-linear-to-br from-primary to-primary-container px-4 py-6 text-on-primary shadow-[0_12px_40px_rgba(25,28,27,0.06)] hover:opacity-95 sm:px-7">
+                        <span className="truncate">Ver catálogo</span>
                       </Button>
 
                       <Button
                         variant="secondary"
-                        className="rounded-full bg-secondary-container px-7 py-6 text-on-secondary-container hover:opacity-95"
+                        className="min-w-0 flex-1 rounded-full bg-secondary-container px-4 py-6 text-on-secondary-container hover:opacity-95 sm:px-7"
                       >
-                        Pedir ramo personalizado
+                        <span className="truncate">
+                          Pedir ramo personalizado
+                        </span>
                       </Button>
                     </div>
 
-                    <div className="grid max-w-xl grid-cols-1 gap-4 pt-4 sm:grid-cols-3">
-                      <div className="rounded-3xl bg-surface-container-low p-4">
+                    <div className="flex gap-4 pt-4 max-sm:flex-row max-sm:flex-nowrap sm:grid sm:max-w-xl sm:grid-cols-3">
+                      <div className="min-w-0 flex-1 rounded-3xl bg-surface-container-low p-4">
                         <p className="text-2xl font-bold text-primary">+120</p>
                         <p className="text-sm text-on-surface-variant">
                           composiciones florales
                         </p>
                       </div>
-                      <div className="rounded-3xl bg-primary-fixed/65 p-4">
+                      <div className="min-w-0 flex-1 rounded-3xl bg-primary-fixed/65 p-4">
                         <p className="text-2xl font-bold text-primary">24h</p>
                         <p className="text-sm text-on-surface-variant">
                           entregas locales
                         </p>
                       </div>
-                      <div className="rounded-3xl bg-secondary-container/70 p-4">
+                      <div className="min-w-0 flex-1 rounded-3xl bg-secondary-container/70 p-4">
                         <p className="text-2xl font-bold text-secondary">
                           100%
                         </p>
